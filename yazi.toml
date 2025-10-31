@@ -1,0 +1,29 @@
+[opener]
+edit = [
+	{ run = '${EDITOR} "$1"', desc = "$EDITOR", for = "unix", block = true },
+]
+play = [
+  { run = 'explorer.exe "$(wslpath -w "$1")" &', desc = "Play", for = "linux" },
+]
+open = [
+	{ run = 'explorer.exe "$(wslpath -w "$1")" &', desc = "Open", for = "linux" },
+]
+reveal = [
+	{ run = 'explorer.exe /select,$(wslpath -w "$1") &', desc = "Reveal", for = "linux" },
+]
+extract = [
+	{ run = "7z x $1", desc = "Extract here" },
+]
+download = [
+	{ run = "ya emit download --open $1", desc = "Download and open" },
+	{ run = "ya emit download $1",        desc = "Download" },
+]
+
+[open]
+
+[mgr]
+sort_by = "natural"
+sort_reverse = false
+dir_first = true
+
+linemode = "size_and_mtime"
