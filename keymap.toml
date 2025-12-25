@@ -92,7 +92,7 @@ keymap = [
 	{ on = "z",         run = "plugin fzf",                  desc = "Jump to a file/directory via fzf" },
 	{ on = "Z",         run = "plugin zoxide",               desc = "Jump to a directory via zoxide" },
 	{ on = ["<Space>", "z"], run = "shell 'zoxide add \"$(dirname $1)\"'", desc = "Add to zoxide" },
-	{ on = ["<Space>", "n"], run = "shell 'tmux neww'", desc = "Open new window" },
+	{ on = ["<Space>", "n"], run = "shell 'tmux neww yazi'", desc = "Open new window" },
 
 	# Linemode
 	{ on = [ "m", "s" ], run = "linemode size",           desc = "Linemode: size" },
